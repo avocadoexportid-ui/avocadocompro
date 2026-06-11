@@ -1,0 +1,20 @@
+{
+  "name": "Avocado Indonesia",
+  "short_name": "AvoIndo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2D6A4F",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/icon192/192/192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://picsum.photos/seed/icon512/512/512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
