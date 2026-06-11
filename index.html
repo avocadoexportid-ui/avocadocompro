@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avocado Indonesia - Premium Sustainable Farming. Export-Quality Taste.">
+    <meta name="theme-color" content="#2D6A4F">
+    <title>Avocado Indonesia | Premium Green Gold</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Avocado<span>Indo</span>.</a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Sustainable Avocado Farming. <br>Export-Quality Taste.</h1>
+            <p class="hero-subtitle">Direct from East Java highlands to the global market.</p>
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Our Roots</h2>
+                    <p>Avocado Indonesia is a premium avocado farm based in East Java. We work with 200+ local farmers using sustainable farming methods. Export quality to 15+ countries since 2015.</p>
+                    <p>We believe in ethical agriculture, ensuring fair trade for our farmers and the highest quality fruit for our partners.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Farmers</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50</span>
+                        <span class="stat-label">Hectares</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Global</span>
+                        <span class="stat-label">Export Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Selection</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="TC-1">TC-1 Hass</button>
+                    <button class="filter-btn" data-filter="TC-2">TC-2 Mendez</button>
+                    <button class="filter-btn" data-filter="TC-3">TC-3 Oil</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card" data-category="TC-1">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/avocado1/400/300.jpg" alt="Hass Avocado" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">TC-1 Hass Avocado</h3>
+                        <p class="product-desc">Premium Hass avocado with 23% oil content. Grown at 1200m altitude. Hand-picked and export graded. Perfect for retail and processing.</p>
+                        <button class="btn btn-outline" onclick="scrollToContact('TC-1 Hass')">Inquire</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="TC-2">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/avocado2/400/300.jpg" alt="Mendez Avocado" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">TC-2 Mendez Avocado</h3>
+                        <p class="product-desc">Mendez variety with thin skin and creamy yellow flesh. Longer shelf life than Hass. Ideal for export markets and fresh consumption.</p>
+                        <button class="btn btn-outline" onclick="scrollToContact('TC-2 Mendez')">Inquire</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="TC-3">
+                    <div class="product-image">
+                        <img src="https://picsum.photos/seed/avocado3/400/300.jpg" alt="Cold-Pressed Oil" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">TC-3 Cold-Pressed Oil</h3>
+                        <p class="product-desc">100% pure cold-pressed avocado oil. Zero additives. Rich in Vitamin E, K, and Omega-9. HACCP certified production facility.</p>
+                        <button class="btn btn-outline" onclick="scrollToContact('TC-3 Oil')">Inquire</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="contact-intro">Interested in bulk orders or partnership? Reach out to us directly.</p>
+                    
+                    <div class="info-item">
+                        <strong>Address:</strong><br>
+                        Jl. Raya Farming No. 88<br>
+                        Surabaya, East Java, Indonesia
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>Contact:</strong><br>
+                        <a href="mailto:email@avocado.id">email@avocado.id</a><br>
+                        <a href="https://wa.me/628123456789" target="_blank">+62 812 3456 789 (WhatsApp)</a>
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>Business Hours:</strong><br>
+                        Mon - Fri: 08:00 - 17:00
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Interested In</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g. TC-1 Hass">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                        <div id="formFeedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Avocado Indonesia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
